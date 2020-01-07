@@ -1,0 +1,181 @@
+.sample {
+    width:  450px;
+}
+
+body{
+    background-image: url("../pic/uzu.jpg");
+    background-repeat:repeat-x;
+    background-color: #ffcf76;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+iframe {
+    width: 450px;
+    height: 450px;
+}
+
+.mframe {
+    width: 100%;
+}
+
+.tframe {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.pin {
+    position: absolute;
+    cursor: pointer;
+}
+
+#hissyou {
+    bottom: 160px;
+    left: 165px;
+}
+
+#mugendai {
+    top: 260px;
+    left: 100px;
+}
+
+#naritake {
+    top: 250px;
+    left: 190px;
+}
+
+#suzukisan {
+    top: 230px;
+    left: 250px;
+}
+
+#tukumo {
+    top: 270px;
+    left: 230px;
+}
+
+#namiki {
+    top: 230px;
+    left: 210px;
+}
+
+.tab {
+    font-size: 25px;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    position: relative;
+}
+
+.moji2{
+    width: 1100px;
+}
+
+.noren{
+    width: 1200px;
+}
+
+.tframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moji{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.mmap{
+    background-color: cadetblue;
+    width: 420px;
+    height: 520px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map {
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+    height: 695px;
+}
+
+.smaph{
+    width: 400px
+}
+
+.tenmei {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#tabs1{
+    width:1600px;
+}
+
+#tabs-1 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+#tabs-2 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+#tabs-3 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+#tabs-4 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+#tabs-5 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+#tabs-6 {
+    background-color: #fffecd;
+    font-size: 20px;
+}
+
+.full {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    width: 620px;
+}
+
+.right {
+    flex: 1;
+    width: 1000px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tenpojouhou{
+    border: 2px #000000 solid;
+    background-color: #ffffff;
+}
+
+.koumoku{
+    border: 2px #000000 solid;
+    background-color: darkorange;
+    text-align: left;
+}
+
+.syousai{
+    border: 2px #000000 solid;
+    text-align: left;
+}
