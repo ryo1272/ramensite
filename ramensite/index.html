@@ -1,0 +1,470 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>津田沼ラーメンマップ</title>
+
+    <link rel="stylesheet" href="css/ramen.css">
+    <script src="js/map.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script type="text/javascript">
+        $(function () {
+            $("#tabs1").tabs();
+        });
+
+        $(function () {
+            $("#wkTxt").tooltip({
+                show: false,
+                hide: false,
+                position: {
+                    my: "left-5 top-30",
+                    at: "left top",
+                    collision: "flipfit"
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="tflame">
+        <br> <br> <br> <br>
+        <div class="tframe">
+            <div class="title">
+                <img class="noren" src="pic/noren.png" alt="title">
+                <div class="moji">
+                    <img class="moji2" src="pic/moji.png">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="mframe">
+            <div class="map">
+                <img class="smaph" src="pic/sumaho.png" alt="地図">
+                <div id="wkTxt">
+                    <img src="pic/pin.png" alt="なりたけ" class="pin" id="naritake" title="なりたけ" onclick="mappin(this)">
+                    <img src="pic/pin.png" alt="必勝軒" class="pin" id="hissyou" title="必勝軒" onclick="mappin(this)">
+                    <img src="pic/pin.png" alt="鈴木さん" class="pin" id="suzukisan" title="鈴木さん" onclick="mappin(this)">
+                    <img src="pic/pin.png" alt="九十九" class="pin" id="tukumo" title="九十九" onclick="mappin(this)">
+                    <img src="pic/pin.png" alt="無限大" class="pin" id="mugendai" title="無限大" onclick="mappin(this)">
+                    <img src="pic/pin.png" alt="南木商店" class="pin" id="namiki" title="南木商店" onclick="mappin(this)">
+                </div>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <div id="tabs1">
+            <ul>
+                <li><a class="tab" href="#tabs-1">なりたけ</a></li>
+                <li><a class="tab" href="#tabs-2">必勝軒</a></li>
+                <li><a class="tab" href="#tabs-3">鈴木さん</a></li>
+                <li><a class="tab" href="#tabs-4">九十九</a></li>
+                <li><a class="tab" href="#tabs-5">無限大</a></li>
+                <li><a class="tab" href="#tabs-6">南木商店</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/なりたけ.jpg" alt="なりたけ" /><br>
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=17&q=なりたけ津田沼店"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">こってりらーめん　なりたけ</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        こってりラーメン　なりたけ　津田沼店
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県船橋市前原西2-11-7
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        047-477-7987
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        11:00~翌3:00
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        水曜日
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                        <p>
+                            豚の背油を贅沢に使用したこってりスープに硬めに茹で上げた中太麺が特徴。<br>
+                            ベースとなるメニューは醤油ラーメン、味噌ラーメン、味噌つけ麺。</br>
+                            チャーシュー等の定番のものから辛旨ラーメンなる派生メニューも存在する。<br>
+                            写真は醤油ラーメン(750円)
+                        </p><br>
+                        <p>
+                            一言<br>
+                            がっつり背油だが、店員に言えば量を調整することができる
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/必勝軒.jpg" alt="必勝軒" /><br>
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=16&q=必勝軒津田沼店"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">必勝軒</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        必勝軒
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県習志野市津田沼2-5-9
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        047-474-8283
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        [月]19:00~21:30<br>
+                                        [火・木・土・祝]11:30~14:20<br>
+                                        [水・金]11:30~14:20/19:00~21:20
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        日曜日
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                        <p>
+                            スープが曜日によって動物系・魚介系・バランスと変わるのが特徴。<br>
+                            上記の日替わりスープのラーメンとつけ麺がメニューにある。</br>
+                            店名からか合格祈願に食べに行く人もいる。<br>
+                            写真は土・祝のつけ麺(900円)
+                        </p><br>
+                        <p>
+                            一言<br>
+                            ラーメンの替え玉が1玉100円
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabs-3">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/鈴木さん.jpg" alt="鈴木さん" />
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=16&q=鈴木さん津田沼"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">魚骨ラーメン 鈴木さん</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        魚骨ラーメン 鈴木さん
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県船橋市前原西2-32-10
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        047-478-1175
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        11:30~翌2:00
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        不定休
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                        <p>
+                            魚骨出汁のスープとメニューの名前にさんまや鯛など魚の名前が入っているのが特徴。<br>
+                            さんまラーメンという見慣れない組み合わせのメニューが目立ち、そのラーメンに乗って出てくる秋刀魚醤のインパクトがすごい。そして意外と合う。</br>
+                            鯛ラーメンは鯛茶漬けの記憶がよみがえる味。<br>
+                            写真はさんまラーメン(750円)
+                        </p><br>
+                        <p>
+                            一言<br>
+                            鈴木イチローさんはラーメン一杯無料（身分を証明できるものが必要）
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/九十九.png" alt="九十九" />
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=16&q=九十九ラーメン津田沼"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">九十九ラーメン</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        九十九ラーメン　津田沼店
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県船橋市前原西2-21-6
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        047-404-0141
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        11:00~翌5:00
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        年中無休
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                        <p>
+                            とてもマイルドなとんこつスープが特徴であり、とんこつラーメンから醤油とんこつラーメン、味噌とんこつラーメンも存在する。<br>
+                            見た目のインパクトのすさまじい元祖チーズラーメンもスープはとんこつである。</br>
+                            『99%の九十九ラーメンにあなたの1%を加えて100%の味にしてください」と書いてある。<br>
+                            写真は元祖チーズラーメン(980円)
+                        </p><br>
+                        <p>
+                            一言<br>
+                            チーズに死角はない
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-5">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/無限大.jpg" alt="無限大" />
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=16&q=ラーメン無限大津田沼"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">ラーメン無限大</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        ラーメン無限大　津田沼店
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県船橋市前原西2-4-10
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        047-404-4287
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        [月~土]11:00~24:30<br>
+                                        [日]11:00~24:00
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        年中無休
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                        <p>
+                            いわゆる二郎系の系列である。<br>
+                            メニューにらーめん、みそらーめん、塩らーめんと並んでホルモン麺がある他、つけ麺もある。</br>
+                            背油の量、野菜の量、湯で加減はカスタマイズできる。<br>
+                            写真はらーめん(750円)
+                        </p><br>
+                        <p>
+                            一言<br>
+                            ニンニクの追加は有料
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-6">
+                <div class="full">
+                    <div class="left">
+                        <img class="sample" src="pic/南木商店.jpg" alt="南木商店" />
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&ll=35.691220,140.020500&z=16&q=九州 南木商店"></iframe>
+                    </div>
+                    <div class="right">
+                        <div class="tenmei">九州らーめん 南木商店</div><br><br>
+                        <p>
+                            <table class="tenpojouhou">
+                                <tr>
+                                    <th class="koumoku">
+                                        店名
+                                    </th>
+                                    <th class="syousai">
+                                        九州らーめん 南木商店
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        住所
+                                    </th>
+                                    <th class="syousai">
+                                        千葉県船橋市前原西2-34-11 ヒシノビル1F
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        電話番号&nbsp;&nbsp;
+                                    </th>
+                                    <th class="syousai">
+                                        ---
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        営業時間
+                                    </th>
+                                    <th class="syousai">
+                                        11:30~翌3:00<br>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="koumoku">
+                                        定休日
+                                    </th>
+                                    <th class="syousai">
+                                        年中無休
+                                    </th>
+                                </tr>
+                            </table>
+                        </p><br>
+                            <p>
+                                自家製マー油が入ったとんこつラーメンが特徴。<br>
+                                入っていたビルの老朽化により2019年2月に閉店、現在物件を捜索している。</br>
+                                Twitterアカウントが存在する（@tudanumahonten）ため、動向が気になる方は<br>チェックしてみては。<br>
+                                写真はとんこつラーメン(680円)
+                            </p><br>
+                        <p>
+                            一言<br>
+                            券売機に〇〇めしというメニューがあり、個人的ににくめしが気になる
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
